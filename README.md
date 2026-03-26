@@ -7,30 +7,13 @@ A collection of Data Structures and Algorithms (DSA) programs written in Python 
 - `LinearSearch/`
   - `linear_search.py` - Linear Search implementation in Python.
   - `linear_searchh.c` - Linear Search implementation in C.
-  - `linear_searchh.exe` - Compiled executable generated from the C file.
-
-## About Linear Search
-
-Linear Search checks each element in a list one by one until:
-
-1. The target is found, or
-2. The list ends.
-
-### Time Complexity
-
-- Best Case: `O(1)` (target found at first position)
-- Average Case: `O(n)`
-- Worst Case: `O(n)` (target at last position or not present)
-
-### Space Complexity
-
-- `O(1)` (constant extra space)
 
 ## Getting Started
 
 ### Prerequisites
 
 - Python 3.x installed
+- GCC compiler installed (for running the C file)
 
 ### Run the Program
 
@@ -46,14 +29,33 @@ Or on Windows:
 python -u "c:\Users\MSI\Desktop\Python\DSA\LinearSearch\linear_search.py"
 ```
 
+### Compile and Run C File
+
+From the project root:
+
+```bash
+gcc LinearSearch/linear_searchh.c -o LinearSearch/linear_searchh
+```
+
+Run on Linux/macOS:
+
+```bash
+./LinearSearch/linear_searchh
+```
+
+Run on Windows:
+
+```bash
+LinearSearch\linear_searchh.exe
+```
+
 ## Folder Structure
 
 ```text
 DSA/
 └── LinearSearch/
   ├── linear_search.py
-  ├── linear_searchh.c
-  └── linear_searchh.exe
+  └── linear_searchh.c
 ```
 
 ## Learning Goals
