@@ -26,3 +26,11 @@ env/
 # OS/editor noise
 .DS_Store
 Thumbs.db
+
+# VS Code local state (keep shared workspace config files)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/c_cpp_properties.json
