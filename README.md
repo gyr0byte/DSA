@@ -5,7 +5,9 @@ A collection of Data Structures and Algorithms (DSA) programs written in Python 
 ## Current Contents
 
 - `LinearSearch/`
-  - `linearsearch.py` - Basic implementation of Linear Search.
+  - `linear_search.py` - Linear Search implementation in Python.
+  - `linear_searchh.c` - Linear Search implementation in C.
+  - `linear_searchh.exe` - Compiled executable generated from the C file.
 
 ## About Linear Search
 
@@ -35,13 +37,13 @@ Linear Search checks each element in a list one by one until:
 From the project root:
 
 ```bash
-python LinearSearch/linearsearch.py
+python LinearSearch/linear_search.py
 ```
 
 Or on Windows:
 
 ```bash
-python -u "c:\Users\MSI\Desktop\Python\DSA\LinearSearch\linearsearch.py"
+python -u "c:\Users\MSI\Desktop\Python\DSA\LinearSearch\linear_search.py"
 ```
 
 ## Folder Structure
@@ -49,7 +51,9 @@ python -u "c:\Users\MSI\Desktop\Python\DSA\LinearSearch\linearsearch.py"
 ```text
 DSA/
 └── LinearSearch/
-    └── linearsearch.py
+  ├── linear_search.py
+  ├── linear_searchh.c
+  └── linear_searchh.exe
 ```
 
 ## Learning Goals
