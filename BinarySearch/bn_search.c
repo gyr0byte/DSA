@@ -15,6 +15,7 @@ int locate_num(int nums[], int arraySize, int target){
             low = mid + 1;
         }
     }
+    return -1;
 }
 
 int main(){
