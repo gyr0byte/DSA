@@ -7,6 +7,9 @@ A collection of Data Structures and Algorithms (DSA) programs written in Python 
 - `LinearSearch/`
   - `linear_search.py` - Linear Search implementation in Python.
   - `linear_searchh.c` - Linear Search implementation in C.
+- `BinarySearch/`
+  - `bn_search.py` - Binary Search implementation in Python.
+  - `bn_search.c` - Binary Search implementation in C.
 
 ## Getting Started
 
@@ -17,45 +20,53 @@ A collection of Data Structures and Algorithms (DSA) programs written in Python 
 
 ### Run the Program
 
-From the project root:
+Run Python files from the project root:
 
 ```bash
 python LinearSearch/linear_search.py
+python BinarySearch/bn_search.py
 ```
 
 Or on Windows:
 
 ```bash
 python -u "c:\Users\MSI\Desktop\Python\DSA\LinearSearch\linear_search.py"
+python -u "c:\Users\MSI\Desktop\Python\DSA\BinarySearch\bn_search.py"
 ```
 
 ### Compile and Run C File
 
-From the project root:
+Compile from the project root:
 
 ```bash
 gcc LinearSearch/linear_searchh.c -o LinearSearch/linear_searchh
+gcc BinarySearch/bn_search.c -o BinarySearch/bn_search
 ```
 
 Run on Linux/macOS:
 
 ```bash
 ./LinearSearch/linear_searchh
+./BinarySearch/bn_search
 ```
 
 Run on Windows:
 
 ```bash
 LinearSearch\linear_searchh.exe
+BinarySearch\bn_search.exe
 ```
 
 ## Folder Structure
 
 ```text
 DSA/
+├── BinarySearch/
+│   ├── bn_search.py
+│   └── bn_search.c
 └── LinearSearch/
-  ├── linear_search.py
-  └── linear_searchh.c
+    ├── linear_search.py
+    └── linear_searchh.c
 ```
 
 ## Learning Goals
