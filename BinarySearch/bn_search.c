@@ -23,6 +23,9 @@ int main(){
     int target = 9;
     int arraySize = sizeof(nums) / sizeof(nums[0]);
     int result = locate_num(nums, arraySize, target);
-    printf("The target %d was found at index: %d", target, result);
+    if(result != -1)
+        printf("The target %d was found at index: %d", target, result);
+    else
+        printf("Target %d not found!", target);
     return 0;
 }
