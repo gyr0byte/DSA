@@ -15,4 +15,7 @@ def locate_num(nums, target):
 nums = [1, 2, 3, 4, 7, 9, 11, 13]
 target = 9
 result = locate_num(nums, target)
-print(f"The target {target} was found at index {result}")
+if result != -1:
+    print(f"The target {target} was found at index: {result}")
+else:
+    print(f"Target {target} not found!")
