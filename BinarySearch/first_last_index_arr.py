@@ -31,4 +31,7 @@ nums = [1, 1, 2, 3, 4, 4, 6, 6, 6, 6, 7, 8, 8, 9]
 target = 6
 first_index = first_position(nums, target)
 last_index = last_position(nums, target)
-print(f"The starting index of target {target} is {first_index} and last index is {last_index}")
+if first_index != -1:
+    print(f"The starting index of target {target} is {first_index} and last index is {last_index}")
+else:
+    print(f"Target {target} not found!")
