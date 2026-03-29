@@ -10,6 +10,7 @@ A collection of Data Structures and Algorithms (DSA) programs written in Python 
 - `BinarySearch/`
   - `bn_search.py` - Binary Search implementation in Python.
   - `bn_search.c` - Binary Search implementation in C.
+  - `first_last_index_arr.c` - Find first and last index of element in sorted array (C).
   - `first_last_index_arr.py` - Find first and last index of element in sorted array.
 
 ## Getting Started
@@ -43,6 +44,7 @@ DSA/
 ├── BinarySearch/
 │   ├── bn_search.py
 │   ├── bn_search.c
+│   ├── first_last_index_arr.c
 │   └── first_last_index_arr.py
 └── LinearSearch/
     ├── linear_search.py
