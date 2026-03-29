@@ -31,3 +31,20 @@ int last_position(int nums[], int size, int target) {
     }
     return result;
 }
+
+int main() {
+    int nums[] = {1, 1, 2, 3, 4, 4, 6, 6, 6, 6, 7, 8, 8, 9};
+    int size = sizeof(nums) / sizeof(nums[0]);
+    int target = 6;
+
+    int first_index = first_position(nums, size, target);
+    int last_index  = last_position(nums, size, target);
+
+    if (first_index != -1) {
+        printf("The starting index of target %d is %d and last index is %d\n", target, first_index, last_index);
+    } else {
+        printf("Target %d not found!\n", target);
+    }
+
+    return 0;
+}
