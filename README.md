@@ -12,6 +12,10 @@ A collection of Data Structures and Algorithms (DSA) programs written in Python 
   - `bn_search.c` - Binary Search implementation in C.
   - `first_last_index_arr.c` - Find first and last index of element in sorted array (C).
   - `first_last_index_arr.py` - Find first and last index of element in sorted array.
+  - `right_or_left_minimum.py` - Find right or left minimum in rotated sorted array.
+- `BinaryTree/`
+  - `binary_tree.py` - Binary Tree implementation in Python.
+  - `binary_tree_tuple.py` - Binary Tree using tuples in Python.
 - `RotationCount/`
   - `rotation_count_linear.py` - Rotation count in a rotated sorted array (Python, linear approach).
   - `rotation_count_linear.c` - Rotation count in a rotated sorted array (C, linear approach).
@@ -48,13 +52,17 @@ DSA/
 │   ├── bn_search.py
 │   ├── bn_search.c
 │   ├── first_last_index_arr.c
-│   └── first_last_index_arr.py
-├── RotationCount/
-│   ├── rotation_count_linear.py
-│   └── rotation_count_linear.c
-└── LinearSearch/
-    ├── linear_search.py
-    └── linear_searchh.c
+│   ├── first_last_index_arr.py
+│   └── right_or_left_minimum.py
+├── BinaryTree/
+│   ├── binary_tree.py
+│   └── binary_tree_tuple.py
+├── LinearSearch/
+│   ├── linear_search.py
+│   └── linear_searchh.c
+└── RotationCount/
+    ├── rotation_count_linear.py
+    └── rotation_count_linear.c
 ```
 
 ## Learning Goals
