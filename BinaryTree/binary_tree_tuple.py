@@ -17,11 +17,22 @@ def parse_tuple(data):
         node = TreeNode(data)
     return node
 
+def display_keys(node, space = '\t', level=0):
+    # if the node is empty
+    if node is None:
+        print(space*level + " ")
+        return
+    
+    # if the node is leaf
+    if node.left is None and node.right is None:
+        print(space*level + str(node.key))
+        return
+    
+    #if the node has children
+    display_keys(node.right, space, level+1)
+    print(space*level + str(node.key))
+    display_keys(node.left,space,level+1)
 
 tree_tuple = ((1, 3, None), 2, ((None, 3, 4), 5, (6, 7, 8)))
 tree1 = parse_tuple(tree_tuple)
-print(f"                  {tree1.key}")  # should print 2
-print(f"            {tree1.left.key}            {tree1.right.key}")
-print(f"     {tree1.left.left.key}          {tree1.left.right} {tree1.right.left.key}        {tree1.right.right.key}")
-print(
-    f"                        {tree1.right.left.right.key}  {tree1.right.right.left.key}     {tree1.right.right.right.key}")
+display_keys(tree1)
