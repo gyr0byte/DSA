@@ -20,7 +20,7 @@ def parse_tuple(data):
 def display_keys(node, space = '\t', level=0):
     # if the node is empty
     if node is None:
-        print(space*level + " ")
+        print(space*level + "None")
         return
     
     # if the node is leaf
