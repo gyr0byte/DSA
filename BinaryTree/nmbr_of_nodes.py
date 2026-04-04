@@ -24,3 +24,5 @@ def parse_tuple(data):
 tree_tuple = ((1, 3, None), 2, ((None, 3, 4), 5, (6, 7, 8)))
 tree1 = parse_tuple(tree_tuple)
 number_of_nodes = tree_size(tree1)
+
+print(number_of_nodes)
