@@ -16,6 +16,8 @@ A collection of Data Structures and Algorithms (DSA) programs written in Python 
 - `BinaryTree/`
   - `binary_tree.py` - Binary Tree implementation in Python.
   - `binary_tree_tuple.py` - Binary Tree using tuples in Python.
+  - `height_of_tree.py` - Find the height of a binary tree.
+  - `nmbr_of_nodes.py` - Count number of nodes in a binary tree.
 - `RotationCount/`
   - `rotation_count_linear.py` - Rotation count in a rotated sorted array (Python, linear approach).
   - `rotation_count_linear.c` - Rotation count in a rotated sorted array (C, linear approach).
@@ -56,7 +58,9 @@ DSA/
 │   └── right_or_left_minimum.py
 ├── BinaryTree/
 │   ├── binary_tree.py
-│   └── binary_tree_tuple.py
+│   ├── binary_tree_tuple.py
+│   ├── height_of_tree.py
+│   └── nmbr_of_nodes.py
 ├── LinearSearch/
 │   ├── linear_search.py
 │   └── linear_searchh.c
