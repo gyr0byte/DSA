@@ -4,14 +4,14 @@ class TreeNode:
         self.left = None
         self.right = None
 
-def minDepth(self, root):
+def minDepth(root):
         if root is None:
             return 0
         if root.left is None:
-            return 1 + self.minDepth(root.right)
+            return 1 + minDepth(root.right)
         if root.right is None:
-            return 1 + self.minDepth(root.left)
-        return 1 + min(self.minDepth(root.left), self.minDepth(root.right))
+            return 1 + minDepth(root.left)
+        return 1 + min(minDepth(root.left), minDepth(root.right))
 
 def parse_tuple(data):
     if isinstance(data, tuple) and len(data) == 3:
@@ -27,5 +27,5 @@ def parse_tuple(data):
 
 tree_tuple = ((1, 3, None), 2, ((None, 3, 4), 5, (6, 7, 8)))
 tree1 = parse_tuple(tree_tuple)
-solution = maxDepth(tree1)
+solution = minDepth(tree1)
 print(solution)
