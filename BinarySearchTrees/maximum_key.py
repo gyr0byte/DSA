@@ -6,18 +6,11 @@ class TreeNode:
 
 
 def parse_tuple(data):
-    if isinstance(data, tuple) and len(data) == 3:
+    if isinstance(data, tuple) and len(data) == 3: 
         node = TreeNode(data[1])
-        node.left = parse_tuple(data[0])
-        node.right = parse_tuple(data[2])
+        node.left = parse_tuple(node[0])
+        node.right = parse
 
-    elif data is None:
-        node = None
-    else:
-        node = TreeNode(data)
-    return node
 
-    
-    return (is_bst(node.left, left, node.key) and is_bst(node.right, node.key, right))
 tree_tuple = ((1, 3, None), 2, ((None, 3, 4), 5, (6, 7, 8)))
 tree1 = parse_tuple(tree_tuple)
