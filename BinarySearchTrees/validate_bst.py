@@ -16,3 +16,6 @@ def parse_tuple(data):
     else:
         node = TreeNode(data)
     return node
+
+tree_tuple = ((1, 3, None), 2, ((None, 3, 4), 5, (6, 7, 8)))
+tree1 = parse_tuple(tree_tuple)
