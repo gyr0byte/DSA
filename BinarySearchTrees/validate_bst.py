@@ -24,6 +24,7 @@ def is_bst(node, left, right):
     if not (node.key < right and node.key > left):
         return False
     
-    
+    return (is_bst(node.left, left, node.key) and is_bst(node.right, node.key, right))
 tree_tuple = ((1, 3, None), 2, ((None, 3, 4), 5, (6, 7, 8)))
 tree1 = parse_tuple(tree_tuple)
+print("This is a valid binary tree" if (is_bst(tree1, float("-inf"), float("inf"))) else "Not a valid binary tree")
