@@ -20,5 +20,14 @@ def parse_tuple(data):
     return node
 
 
+def is_max(node):
+    if not node:
+        return float("-inf")
+
+    return max(node.key, is_max(node.left), is_max(node.right))
+
+
 tree_tuple = ((1, 3, None), 2, ((None, 3, 4), 5, (6, 7, 8)))
 tree1 = parse_tuple(tree_tuple)
+maxvalue = is_max(tree1)
+print(f"The max value of the tree is {maxvalue}")
