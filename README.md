@@ -20,6 +20,9 @@ A collection of Data Structures and Algorithms (DSA) programs written in Python 
   - `max_depth.py` - Find the maximum depth of a binary tree.
   - `min_depth.py` - Find the minimum depth of a binary tree.
   - `nmbr_of_nodes.py` - Count number of nodes in a binary tree.
+- `BinarySearchTrees/`
+  - `maximum_key.py` - Find maximum key in a Binary Search Tree.
+  - `validate_bst.py` - Validate whether a tree is a Binary Search Tree.
 - `RotationCount/`
   - `rotation_count_linear.py` - Rotation count in a rotated sorted array (Python, linear approach).
   - `rotation_count_linear.c` - Rotation count in a rotated sorted array (C, linear approach).
@@ -65,6 +68,9 @@ DSA/
 │   ├── max_depth.py
 │   ├── min_depth.py
 │   └── nmbr_of_nodes.py
+├── BinarySearchTrees/
+│   ├── maximum_key.py
+│   └── validate_bst.py
 ├── LinearSearch/
 │   ├── linear_search.py
 │   └── linear_searchh.c
