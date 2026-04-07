@@ -17,3 +17,14 @@ def parse_tuple(data):
         node = TreeNode(data)
     return node
 
+def is_bst(node, left, right):
+    if not node:
+        return True
+    elif not (node.key < right and node.key > left):
+        return False
+    
+    return (is_bst(node.left, left, node.key) and is_bst(node.right, node.key, right))
+
+tree1 = parse_tuple((("aakash", "biraj", "hemanth"), "jadesh", ("siddhant", "sonaksh", "vishal")))
+
+
