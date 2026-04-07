@@ -4,13 +4,16 @@ class TreeNode:
         self.left = None
         self.right = None
 
-def parse_tuple_to_bst(data):
-    if not data:
-        return None
+def parse_tuple(data):
+    if isinstance(data, tuple) and data == 3:
+        node = TreeNode(data[1])
+        node.left = parse_tuple(data[0])
+        node.right = parse_tuple(data[2])
 
-    key, left_data, right_data = data
-    node = TreeNode(key)
-    node.left = parse_tuple_to_bst(left_data)
-    node.right = parse_tuple_to_bst(right_data)
+    elif data is None:
+        node = None
 
+    else:
+        node = TreeNode(data)
     return node
+
