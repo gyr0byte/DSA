@@ -1,3 +1,5 @@
+import display as ds
+
 class TreeNode:
     def __init__(self, key):
         self.key = key
@@ -19,11 +21,11 @@ def parse_tuple(data):
     return node
 
 
-def is_bst(node, left = None, right = None):
+def is_bst(node, left=None, right=None):
     if not node:
         return True
 
-    if left is not None and node.key <= left:  
+    if left is not None and node.key <= left:
         return False
     if right is not None and node.key >= right:
         return False
@@ -33,4 +35,5 @@ def is_bst(node, left = None, right = None):
 tree1 = parse_tuple((("aakash", "biraj", "hemanth"),
                     "jadesh", ("siddhant", "sonaksh", "vishal")))
 result = is_bst(tree1)
+ds.display_keys(tree1)
 print(result)
