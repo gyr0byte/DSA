@@ -22,6 +22,7 @@ A collection of Data Structures and Algorithms (DSA) programs written in Python 
   - `nmbr_of_nodes.py` - Count number of nodes in a binary tree.
 - `BinarySearchTrees/`
   - `maximum_key.py` - Find maximum key in a Binary Search Tree.
+  - `minimum_key.py` - Find minimum key in a Binary Search Tree.
   - `validate_bst.py` - Validate whether a tree is a Binary Search Tree.
 - `RotationCount/`
   - `rotation_count_linear.py` - Rotation count in a rotated sorted array (Python, linear approach).
@@ -70,6 +71,7 @@ DSA/
 │   └── nmbr_of_nodes.py
 ├── BinarySearchTrees/
 │   ├── maximum_key.py
+│   ├── minimum_key.py
 │   └── validate_bst.py
 ├── LinearSearch/
 │   ├── linear_search.py
