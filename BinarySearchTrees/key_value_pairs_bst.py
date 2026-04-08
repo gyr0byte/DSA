@@ -1,11 +1,17 @@
 class BSTNode():
-    def __init__(self, key, value = None):
-        self.ley = key
-        self.vlaue = value
+    def __init__(self, key, value=None):
+        self.key = key
+        self.value = value
         self.left = None
         self.right = None
         self.parent = None
-        
+
+
+class User:
+    def __init__(self, username):
+        self.username = username
+
+
 class TreeNode:
     def __init__(self, key):
         self.key = key
@@ -26,6 +32,9 @@ def parse_tuple(data):
         node = TreeNode(data)
     return node
 
-tree1 = parse_tuple((("aakash", "biraj", "hemanth"), "jadhesh", ("siddhant", "sonaksh", "vishal")))
+
+tree1 = parse_tuple((("aakash", "biraj", "hemanth"),
+                    "jadhesh", ("siddhant", "sonaksh", "vishal")))
+jadhesh = User("jadhesh")
 tree = BSTNode(jadhesh.username, jadhesh)
 print(tree.key)
