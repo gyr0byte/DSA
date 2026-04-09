@@ -9,7 +9,7 @@ class TreeNode():
 
 
 def parse_tuple(data):
-    if isinstance(data, tuple) and data == 3:
+    if isinstance(data, tuple) and len(data) == 3:
         node = TreeNode(data[1])
         node.left = parse_tuple(data[0])
         node.right = parse_tuple(data[2])
