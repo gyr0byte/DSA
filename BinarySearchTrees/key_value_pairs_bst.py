@@ -1,3 +1,6 @@
+import display as ds
+
+
 class BSTNode():
     def __init__(self, key, value=None):
         self.key = key
@@ -32,6 +35,7 @@ def parse_tuple(data):
         node = TreeNode(data)
     return node
 
+
 def insert(node, key, value):
     if node is None:
         node = BSTNode(key, value)
@@ -43,8 +47,11 @@ def insert(node, key, value):
         node.right.parent = node
     return node
 
+
 tree1 = parse_tuple((("aakash", "biraj", "hemanth"),
                     "jadhesh", ("siddhant", "sonaksh", "vishal")))
 jadhesh = User("jadhesh")
 tree = BSTNode(jadhesh.username, jadhesh)
-insert(tree, "Tanya", User("Tanya"))
+insert(tree1, "Tanya", User("Tanya"))
+
+ds.display_keys(tree1)
