@@ -22,6 +22,7 @@ A collection of Data Structures and Algorithms (DSA) programs written in Python 
   - `nmbr_of_nodes.py` - Count number of nodes in a binary tree.
 - `BinarySearchTrees/`
   - `display.py` - Display Binary Search Tree values.
+  - `is_balanced.py` - Check if a Binary Search Tree is balanced.
   - `key_value_pairs_bst.py` - Binary Search Tree with key-value pairs.
   - `maximum_key.py` - Find maximum key in a Binary Search Tree.
   - `minimum_key.py` - Find minimum key in a Binary Search Tree.
@@ -30,6 +31,8 @@ A collection of Data Structures and Algorithms (DSA) programs written in Python 
 - `RotationCount/`
   - `rotation_count_linear.py` - Rotation count in a rotated sorted array (Python, linear approach).
   - `rotation_count_linear.c` - Rotation count in a rotated sorted array (C, linear approach).
+- `TwoPointers/`
+  - `move_zeros.py` - Move all zeros to the end using two pointers.
 
 ## Getting Started
 
@@ -62,7 +65,7 @@ DSA/
 ├── BinarySearch/
 │   ├── bn_search.py
 │   ├── bn_search.c
-│   ├── first_last_index_arr.c
+├── RotationCount/
 │   ├── first_last_index_arr.py
 │   └── right_or_left_minimum.py
 ├── BinaryTree/
@@ -74,6 +77,7 @@ DSA/
 │   └── nmbr_of_nodes.py
 ├── BinarySearchTrees/
 │   ├── display.py
+│   ├── is_balanced.py
 │   ├── key_value_pairs_bst.py
 │   ├── maximum_key.py
 │   ├── minimum_key.py
@@ -84,7 +88,9 @@ DSA/
 │   └── linear_searchh.c
 └── RotationCount/
     ├── rotation_count_linear.py
-    └── rotation_count_linear.c
+  └── rotation_count_linear.c
+└── TwoPointers/
+  └── move_zeros.py
 ```
 
 ## Learning Goals
