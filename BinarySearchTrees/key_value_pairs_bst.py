@@ -32,9 +32,19 @@ def parse_tuple(data):
         node = TreeNode(data)
     return node
 
+def insert(node, key, value):
+    if node is None:
+        node = BSTNode(key, value)
+    elif key < node.key:
+        node.left = insert(node.left, key, value)
+        node.left.parent = node
+    elif key > node.key:
+        node.right = insert(node.right, key, value)
+        node.right.parent = node
+    return node
 
 tree1 = parse_tuple((("aakash", "biraj", "hemanth"),
                     "jadhesh", ("siddhant", "sonaksh", "vishal")))
 jadhesh = User("jadhesh")
 tree = BSTNode(jadhesh.username, jadhesh)
-print(tree.key)
+insert(tree, "Tanya", User("Tanya"))
