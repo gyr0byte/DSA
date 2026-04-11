@@ -6,3 +6,6 @@ def get_index(data_list, a_string):
         
     list_index = result % len(data_list)
     return list_index
+
+data_list = [None] * 4096
+print(get_index(data_list, "Gaurav"))
