@@ -8,3 +8,6 @@ def get_index(data_list, a_string):
     return list_index
 
 data_list = [None] * 4096
+key, value = "Gaurav", "9822002200"
+idx = get_index(data_list, key)
+data_list[idx] = (key, value)
