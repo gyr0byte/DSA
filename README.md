@@ -33,6 +33,10 @@ A collection of Data Structures and Algorithms (DSA) programs written in Python 
   - `rotation_count_linear.c` - Rotation count in a rotated sorted array (C, linear approach).
 - `TwoPointers/`
   - `move_zeros.py` - Move all zeros to the end using two pointers.
+- `HashTables/`
+  - `hashing_function.py` - Basic hashing function to compute index.
+  - `insert.py` - Insert key-value data into hash table structure.
+  - `list_kv.py` - List-based key-value storage example.
 
 ## Getting Started
 
@@ -63,18 +67,11 @@ gcc LinearSearch/linear_searchh.c -o LinearSearch/linear_searchh
 ```text
 DSA/
 ├── BinarySearch/
-│   ├── bn_search.py
 │   ├── bn_search.c
-├── RotationCount/
+│   ├── bn_search.py
+│   ├── first_last_index_arr.c
 │   ├── first_last_index_arr.py
 │   └── right_or_left_minimum.py
-├── BinaryTree/
-│   ├── binary_tree.py
-│   ├── binary_tree_tuple.py
-│   ├── height_of_tree.py
-│   ├── max_depth.py
-│   ├── min_depth.py
-│   └── nmbr_of_nodes.py
 ├── BinarySearchTrees/
 │   ├── display.py
 │   ├── is_balanced.py
@@ -83,14 +80,25 @@ DSA/
 │   ├── minimum_key.py
 │   ├── str_bst.py
 │   └── validate_bst.py
+├── BinaryTree/
+│   ├── binary_tree.py
+│   ├── binary_tree_tuple.py
+│   ├── height_of_tree.py
+│   ├── max_depth.py
+│   ├── min_depth.py
+│   └── nmbr_of_nodes.py
+├── HashTables/
+│   ├── hashing_function.py
+│   ├── insert.py
+│   └── list_kv.py
 ├── LinearSearch/
 │   ├── linear_search.py
 │   └── linear_searchh.c
-└── RotationCount/
-    ├── rotation_count_linear.py
-  └── rotation_count_linear.c
+├── RotationCount/
+│   ├── rotation_count_linear.py
+│   └── rotation_count_linear.c
 └── TwoPointers/
-  └── move_zeros.py
+    └── move_zeros.py
 ```
 
 ## Learning Goals
