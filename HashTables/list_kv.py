@@ -16,6 +16,6 @@ data_list[idx] = (key, value)
 key, value = "Sirjan", "9811122200"
 idx = get_index(data_list, key)
 data_list[idx] = (key, value)
-key, value = data_list[idx]
+
 keys = [key[0] for key in data_list if key is not None]
 print(keys)
