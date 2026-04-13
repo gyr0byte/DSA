@@ -16,10 +16,14 @@ class BasicHashTable:
             key, value = kv
             return value
         
-    
+    def update(self, key, value):
+        idx = get_index(self.data_list, key)
+        self.data_list[idx] = key, value
+
+    def list(self):
+        return (kv[0] for kv in self.data_list if kv is not None)
         
     
-
 def get_index(data_list, a_string):
     result = 0
     for a_character in a_string:
