@@ -4,7 +4,19 @@ class BasicHashTable:
         
     def insert(self, key, value):
         idx = get_index(self.data_list, key)
-        self.data_list[idx] = value
+        self.data_list[idx] = key, value
+        
+    def find(self, key):
+        idx = get_index(self.data_list, key)
+        kv = self.data_list[idx]
+
+        if kv is None:
+            return None
+        else: 
+            key, value = kv
+            return value
+        
+    
         
     
 
