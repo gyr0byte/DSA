@@ -1,6 +1,6 @@
 MAX_HASH_TABLE_SIZE = 4096
 
-class BasicHashTabe:
+class BasicHashTable:
     def __init__(self, max_size = MAX_HASH_TABLE_SIZE):
         self.data_list = [None] * max_size
         
@@ -26,6 +26,9 @@ class BasicHashTabe:
         
         self.data_list[idx] = key, value
         return True
+    
+    def list_all(self):
+        return [kv[0] for kv in self.data_list if kv is not None]
          
 def get_index(data_list, a_string):
     result = 0 
@@ -52,3 +55,16 @@ def get_valid_index(data_list, key):
         idx += 1
         if idx == len(data_list):
             idx = 0
+
+basic_table = BasicHashTable(max_size=1024)
+basic_table.insert('Gaurav', '9800022211')
+basic_table.insert('Gaaurv', '9800000000')
+basic_table.insert('Sirjan', '9822334455')
+
+print(basic_table.find('Gaurav'))
+print(basic_table.find('Gaaurv'))
+print(basic_table.find('Sirjan') + '\n')
+
+basic_table.update('Sirjan', '9811111111')
+print(basic_table.find('Sirjan'))
+print(basic_table.list_all())
