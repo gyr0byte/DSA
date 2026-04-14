@@ -50,4 +50,4 @@ print(basic_table.find('Sirjan') + '\n')
 
 basic_table.update('Sirjan', '9811111111')
 print(basic_table.find('Sirjan'))
-print(basic_table.list_all())
+print(basic_table.list_all())   

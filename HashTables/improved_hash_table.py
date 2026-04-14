@@ -8,6 +8,27 @@ class BasicHashTabe:
         idx = get_valid_index(self.data_list, key)
         self.data_list[idx] = key, value
         
+    def find(self, key):
+        idx = get_valid_index(self.data_list, key)
+        kv = self.data_list[idx]
+        
+        if kv is None:
+            return None
+        else:
+            key, value = kv
+            return value
+    
+    def update(self, key, value):
+        idx = get_valid_index(self.data_list, key)
+        kv = self.data_list[idx]
+        if kv is None:
+            return False
+        self.data_list[idx] = key, value
+        
+        return True
+    
+    
+        
         
 def get_index(data_list, a_string):
     result = 0 
