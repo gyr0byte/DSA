@@ -23,13 +23,10 @@ class BasicHashTabe:
         kv = self.data_list[idx]
         if kv is None:
             return False
+        
         self.data_list[idx] = key, value
-        
         return True
-    
-    
-        
-        
+         
 def get_index(data_list, a_string):
     result = 0 
     for a_character in a_string:
