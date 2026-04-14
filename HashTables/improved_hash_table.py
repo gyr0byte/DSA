@@ -41,7 +41,7 @@ def get_index(data_list, a_string):
 
 def get_valid_index(data_list, key):
     idx =  get_index(data_list, key)
-
+    start_idx = idx
     while True:
         kv = data_list[idx]
         
@@ -55,7 +55,9 @@ def get_valid_index(data_list, key):
         idx += 1
         if idx == len(data_list):
             idx = 0
-
+        if idx == start_idx:
+            return None    
+            
 basic_table = BasicHashTable(max_size=1024)
 basic_table.insert('Gaurav', '9800022211')
 basic_table.insert('Gaaurv', '9800000000')
