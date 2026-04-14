@@ -8,7 +8,21 @@ def get_index(data_list, a_string):
     return list_index
 
 def get_valid_index(data_list, key):
-    idx = 
+    idx = get_index(data_list, key)
+    
+    while True:
+        kv = data_list[idx]
+
+        if kv is None:
+            return idx
+        
+        k, v = kv
+        if k == key:
+            return idx
+        
+        idx += 1
+        if idx == len(data_list):
+            idx = 0
     
     
 data_list = [None] * 4096
