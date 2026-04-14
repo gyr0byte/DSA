@@ -35,7 +35,9 @@ A collection of Data Structures and Algorithms (DSA) programs written in Python 
   - `move_zeros.py` - Move all zeros to the end using two pointers.
 - `HashTables/`
   - `basic_hash_table.py` - Basic hash table implementation.
+  - `handling_collsion_hash.py` - Handle collisions in hash tables.
   - `hashing_function.py` - Basic hashing function to compute index.
+  - `improved_hash_table.py` - Improved hash table with better collision handling.
   - `insert.py` - Insert key-value data into hash table structure.
   - `list_kv.py` - List-based key-value storage example.
 
@@ -90,7 +92,9 @@ DSA/
 │   └── nmbr_of_nodes.py
 ├── HashTables/
 │   ├── basic_hash_table.py
+│   ├── handling_collsion_hash.py
 │   ├── hashing_function.py
+│   ├── improved_hash_table.py
 │   ├── insert.py
 │   └── list_kv.py
 ├── LinearSearch/
