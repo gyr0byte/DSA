@@ -40,6 +40,8 @@ A collection of Data Structures and Algorithms (DSA) programs written in Python 
   - `improved_hash_table.py` - Improved hash table with better collision handling.
   - `insert.py` - Insert key-value data into hash table structure.
   - `list_kv.py` - List-based key-value storage example.
+- `BubbleSort/`
+  - `bubble_sort.py` - Bubble Sort implementation in Python.
 
 ## Getting Started
 
@@ -90,6 +92,8 @@ DSA/
 │   ├── max_depth.py
 │   ├── min_depth.py
 │   └── nmbr_of_nodes.py
+├── BubbleSort/
+│   └── bubble_sort.py
 ├── HashTables/
 │   ├── basic_hash_table.py
 │   ├── handling_collsion_hash.py
