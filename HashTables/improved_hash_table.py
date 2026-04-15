@@ -1,5 +1,5 @@
 MAX_HASH_TABLE_SIZE = 4096
-
+DELETED = object()
 class BasicHashTable:
     def __init__(self, max_size = MAX_HASH_TABLE_SIZE):
         self.data_list = [None] * max_size
@@ -27,8 +27,18 @@ class BasicHashTable:
         self.data_list[idx] = key, value
         return True
     
+    def delete(self, key):
+        idx = get_valid_index(self.data_list, key)
+        kv = self.data_list[idx]
+        if kv is None:
+            return None
+        
+        k, v = kv
+        self.data_list[idx] = DELETED
+        return v
+    
     def list_all(self):
-        return [kv[0] for kv in self.data_list if kv is not None]
+        return [kv[0] for kv in self.data_list if kv is not None and kv is not DELETED]
          
 def get_index(data_list, a_string):
     result = 0 
@@ -48,9 +58,10 @@ def get_valid_index(data_list, key):
         if kv is None:
             return idx
         
-        k, v = kv
-        if k == key:
-            return idx
+        if kv is not DELETED:
+            k, v = kv
+            if k == key:
+                return idx
         
         idx += 1
         if idx == len(data_list):
