@@ -44,6 +44,8 @@ A collection of Data Structures and Algorithms (DSA) programs written in Python 
   - `bubble_sort.py` - Bubble Sort implementation in Python.
 - `InsertionSort/`
   - `insertion_sort.py` - Insertion Sort implementation in Python.
+- `MergeSort/`
+  - `merge_sort.py` - Merge Sort implementation in Python.
 
 ## Getting Started
 
@@ -105,6 +107,8 @@ DSA/
 │   └── list_kv.py
 ├── InsertionSort/
 │   └── insertion_sort.py
+├── MergeSort/
+│   └── merge_sort.py
 ├── LinearSearch/
 │   ├── linear_search.py
 │   └── linear_searchh.c
