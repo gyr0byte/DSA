@@ -29,3 +29,6 @@ def merge_sort(nums):
     sorted_nums = merge(left_sorted, right_sorted)
 
     return sorted_nums
+
+nums = [7, 3, 2, 4, 1, 4, 7, 8, 2, 4, 3, 9, 6]
+print(merge_sort(nums))
