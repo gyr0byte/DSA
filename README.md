@@ -42,6 +42,8 @@ A collection of Data Structures and Algorithms (DSA) programs written in Python 
   - `list_kv.py` - List-based key-value storage example.
 - `BubbleSort/`
   - `bubble_sort.py` - Bubble Sort implementation in Python.
+- `InsertionSort/`
+  - `insertion_sort.py` - Insertion Sort implementation in Python.
 
 ## Getting Started
 
@@ -101,6 +103,8 @@ DSA/
 │   ├── improved_hash_table.py
 │   ├── insert.py
 │   └── list_kv.py
+├── InsertionSort/
+│   └── insertion_sort.py
 ├── LinearSearch/
 │   ├── linear_search.py
 │   └── linear_searchh.c
