@@ -11,7 +11,7 @@ def merge(nums1, nums2):
             j += 1
             
 
-    return merged + nums[i:] + nums[j:]
+    return merged + nums1[i:] + nums2[j:]
     
 def merge_sort(nums):
     if len(nums) <= 1:
