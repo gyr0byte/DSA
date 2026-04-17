@@ -10,10 +10,8 @@ def merge(nums1, nums2):
             merged.append(nums2[j])
             j += 1
             
-    nums1_tail = nums1[i:]
-    nums2_tail = nums2[j:]
 
-    return merged + nums1_tail + nums2_tail
+    return merged + nums[i:] + nums[j:]
     
 def merge_sort(nums):
     if len(nums) <= 1:
