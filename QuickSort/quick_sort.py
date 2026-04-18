@@ -25,3 +25,6 @@ def quick_sort(nums, start = 0, end = None):
         quick_sort(nums, pivot+1, end)
 
     return nums
+
+nums = [3, 2, 4, 5, 2, 4, 5, 8, 5, 3, 1, 0, 3, 7, 9, 2, 5, 4, 12, 4, 3, 1, 0, 3, 4, 15, 12, 6]
+print(quick_sort(nums))
