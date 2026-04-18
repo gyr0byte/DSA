@@ -1,6 +1,16 @@
 def partition(nums, start = 0, end = None):
     if end is None:
         end = len(nums) - 1
+    l, r = 0, end - 1
+    while r > l:
+        if nums[l] <= nums[end]:
+            l += 1
+        elif nums[r] > nums[end]:
+            r -= 1
+        else:
+            nums[l], nums[r] = nums[r], nums[l]
+
+    if nums[l]
 def quick_sort(nums, start = 0, end = None):
     if end is None:
         end = len(nums) - 1
