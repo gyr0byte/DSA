@@ -46,6 +46,8 @@ A collection of Data Structures and Algorithms (DSA) programs written in Python 
   - `insertion_sort.py` - Insertion Sort implementation in Python.
 - `MergeSort/`
   - `merge_sort.py` - Merge Sort implementation in Python.
+- `QuickSort/`
+  - `quick_sort.py` - Quick Sort implementation in Python.
 
 ## Getting Started
 
@@ -109,6 +111,8 @@ DSA/
 │   └── insertion_sort.py
 ├── MergeSort/
 │   └── merge_sort.py
+├── QuickSort/
+│   └── quick_sort.py
 ├── LinearSearch/
 │   ├── linear_search.py
 │   └── linear_searchh.c
