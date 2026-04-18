@@ -1,7 +1,7 @@
 def partition(nums, start = 0, end = None):
     if end is None:
         end = len(nums) - 1
-    l, r = 0, end - 1
+    l, r = start, end - 1
     while r > l:
         if nums[l] <= nums[end]:
             l += 1
