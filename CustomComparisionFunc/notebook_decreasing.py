@@ -8,5 +8,10 @@ class Notebook:
         return f"Notebook(title='{self.title}', username='{self.username}', likes={self.likes})"
     
 def compare_likes(nb1, nb2):
-    
+    if nb1.likes > nb2.likes:
+        return 'lesser'
+    elif nb1.likes == nb2.likes:
+        return 'equal'
+    elif nb1.likes < nb2.likes:
+        return 'greater'
     
