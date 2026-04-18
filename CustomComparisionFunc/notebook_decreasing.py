@@ -23,5 +23,10 @@ class Notebook:
         elif x > y:
             return 'greater'
         
-    
-    
+    def merge_sort(objs, compare = default_compare):
+        if len(objs) < 2:
+            return objs
+        mid = len(objs) // 2
+        return merge(merge_sort(objs[:mid], compare), merge_sort(objs[mid:], compare), compare)
+
+    def
