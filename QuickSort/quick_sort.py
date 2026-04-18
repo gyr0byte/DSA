@@ -10,7 +10,12 @@ def partition(nums, start = 0, end = None):
         else:
             nums[l], nums[r] = nums[r], nums[l]
 
-    if nums[l]
+    if nums[l] > nums[end]:
+        nums[l], nums[end] = nums[end], nums[l]
+        return l
+    else:
+        return end
+
 def quick_sort(nums, start = 0, end = None):
     if end is None:
         end = len(nums) - 1
