@@ -7,7 +7,7 @@ class Notebook:
     def __repr__(self):
         return f"Notebook(title='{self.title}', username='{self.username}', likes={self.likes})"
     
-    def compare_likes(nb1, nb2):
+def compare_likes(nb1, nb2):
         if nb1.likes > nb2.likes:
             return 'lesser'
         elif nb1.likes == nb2.likes:
@@ -15,7 +15,7 @@ class Notebook:
         elif nb1.likes < nb2.likes:
             return 'greater'
         
-    def default_compare(x, y):
+def default_compare(x, y):
         if x < y:
             return 'lesser'
         elif x == y:
@@ -23,13 +23,13 @@ class Notebook:
         elif x > y:
             return 'greater'
         
-    def merge_sort(objs, compare = default_compare):
+def merge_sort(objs, compare = default_compare):
         if len(objs) < 2:
             return objs
         mid = len(objs) // 2
         return merge(merge_sort(objs[:mid], compare), merge_sort(objs[mid:], compare), compare)
 
-    def merge(left, right, compare):
+def merge(left, right, compare):
         i, j, merged = 0, 0, []
         while i < len(left) and j < len(right):
             result = compare(left[i], right[j])
@@ -41,4 +41,11 @@ class Notebook:
                 j += 1
                 
         return merged + left[i:] + right[j:]
-        
+    
+notebooks = [
+    Notebook("Python Basics", "alice", 150),
+    Notebook("Data Structures", "bob", 200),
+    Notebook("Machine Learning", "charlie", 180),
+    Notebook("Deep Learning", "dave", 220)
+]
+sorted_notebooks = Notebook.merge_sort(notebooks, compare_likes)
