@@ -46,6 +46,12 @@ notebooks = [
     Notebook("Python Basics", "alice", 150),
     Notebook("Data Structures", "bob", 200),
     Notebook("Machine Learning", "charlie", 180),
-    Notebook("Deep Learning", "dave", 220)
+    Notebook("Deep Learning", "dave", 220),
+    Notebook("Artificial Intelligence", "eve", 170),
+    Notebook("Data Science", "frank", 190),
+    Notebook("Computer Vision", "grace", 210),
+    Notebook("Natural Language Processing", "heidi", 160),
+    Notebook("Reinforcement Learning", "ivan", 230),
 ]
-sorted_notebooks = Notebook.merge_sort(notebooks, compare_likes)
+sorted_notebooks = merge_sort(notebooks, compare_likes)
+print(sorted_notebooks)
