@@ -14,4 +14,4 @@ def lcs_memo(seq1, seq2):
         else:
             memo[key] = max(recurse(idx1 + 1, idx2), recurse(idx1, idx2 + 1))
         return memo[key]
-        
+    return recurse(0, 0)
