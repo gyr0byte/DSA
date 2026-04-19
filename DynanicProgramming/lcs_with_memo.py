@@ -15,3 +15,10 @@ def lcs_memo(seq1, seq2):
             memo[key] = max(recurse(idx1 + 1, idx2), recurse(idx1, idx2 + 1))
         return memo[key]
     return recurse(0, 0)
+
+print(lcs_memo("analogy", "alchemy"))
+print(lcs_memo("AGGTAB", "GXTXAYB"))
+print(lcs_memo("ABCDGH", "AEDFHR"))
+print(lcs_memo("AAAA", "AA"))
+print(lcs_memo("asdwadadwasds", "asdadawdad"))
+print(lcs_memo("AGGTAB", "AGGTAB"))
