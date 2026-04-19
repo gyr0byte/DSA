@@ -11,3 +11,9 @@ def lcs_recursive(seq1, seq2, idx1 = 0, idx2 = 0):
         return max(option1, option2)
     
 print(lcs_recursive("analogy", "alchemy"))
+print(lcs_recursive("AGGTAB", "GXTXAYB"))
+print(lcs_recursive("ABCDGH", "AEDFHR"))
+print(lcs_recursive("AAAA", "AA"))
+print(lcs_recursive("AGGTAB", "AGGTAB"))
+print(lcs_recursive("AGGTAB", "AGGTABX"))
+print(lcs_recursive("intention", "execution"))
