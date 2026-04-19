@@ -1,0 +1,4 @@
+def lcs_recursive(seq1, seq2, idx1 = 0, idx2 = 0):
+    if idx1 == len(seq1) or idx2 == len(seq2):
+        return 0
+    
