@@ -10,3 +10,4 @@ def lcs_recursive(seq1, seq2, idx1 = 0, idx2 = 0):
         option2 = lcs_recursive(seq1, seq2, idx1, idx2 + 1)
         return max(option1, option2)
     
+print(lcs_recursive("analogy", "alchemy"))
