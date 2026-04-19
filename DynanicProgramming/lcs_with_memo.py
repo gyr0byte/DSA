@@ -11,3 +11,7 @@ def lcs_memo(seq1, seq2):
         elif seq1[idx1] == seq2[idx2]:
             memo[key] = 1 + recurse(idx1 + 1, idx2 + 1)
         
+        else:
+            memo[key] = max(recurse(idx1 + 1, idx2), recurse(idx1, idx2 + 1))
+        return memo[key]
+        
