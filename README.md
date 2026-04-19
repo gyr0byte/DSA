@@ -50,6 +50,8 @@ A collection of Data Structures and Algorithms (DSA) programs written in Python 
   - `quick_sort.py` - Quick Sort implementation in Python.
 - `CustomComparisionFunc/`
   - `notebook_decreasing.py` - Custom comparison function example for sorting in decreasing order.
+- `DynanicProgramming/`
+  - `common_subsequence.py` - Find longest common subsequence using dynamic programming.
 
 ## Getting Started
 
@@ -117,6 +119,8 @@ DSA/
 │   └── quick_sort.py
 ├── CustomComparisionFunc/
 │   └── notebook_decreasing.py
+├── DynanicProgramming/
+│   └── common_subsequence.py
 ├── LinearSearch/
 │   ├── linear_search.py
 │   └── linear_searchh.c
