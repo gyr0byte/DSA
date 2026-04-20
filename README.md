@@ -55,6 +55,9 @@ A collection of Data Structures and Algorithms (DSA) programs written in Python 
 - `Memoization/`
   - `largest_common_subsequence.py` - Longest common subsequence implementation.
   - `lcs_with_memo.py` - Longest common subsequence using memoization.
+- `KnapSackProblem/`
+  - `knap_sack.py` - Basic knapsack problem implementation.
+  - `knap_sack_dp.py` - Knapsack problem using dynamic programming.
 
 ## Getting Started
 
@@ -127,6 +130,9 @@ DSA/
 ├── Memoization/
 │   ├── largest_common_subsequence.py
 │   └── lcs_with_memo.py
+├── KnapSackProblem/
+│   ├── knap_sack.py
+│   └── knap_sack_dp.py
 ├── LinearSearch/
 │   ├── linear_search.py
 │   └── linear_searchh.c
