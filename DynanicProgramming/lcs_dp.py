@@ -10,4 +10,7 @@ def lcs_dp(seq1, seq2):
 
     return table[-1][-1]
 
-                
+print(lcs_dp("AGGTAB", "GXTXAYB"))
+print(lcs_dp("alchemist", "analog"))             
+print(lcs_dp("AGGTAB", "AGGTAB"))
+print(lcs_dp("AGGTAB", "AGGXTXAYB"))
