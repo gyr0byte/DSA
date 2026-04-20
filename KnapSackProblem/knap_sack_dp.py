@@ -8,3 +8,7 @@ def max_profit_dp(weights, profit, capacity):
             else:
                 table[i+1][c] = max(table[i][c], profit[i] + table[i][c-weights[i]])
     return table[-1][-1]
+
+print(max_profit_dp([1, 2, 3], [10, 15, 40], 6))
+print(max_profit_dp([1, 2, 3, 4], [10, 15, 40, 50], 5))
+print(max_profit_dp([1, 2, 3, 4, 5], [10, 15, 40, 50, 60], 3))
