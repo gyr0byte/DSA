@@ -52,6 +52,9 @@ A collection of Data Structures and Algorithms (DSA) programs written in Python 
   - `notebook_decreasing.py` - Custom comparison function example for sorting in decreasing order.
 - `DynanicProgramming/`
   - `lcs_dp.py` - Longest common subsequence implementation using dynamic programming.
+- `Memoization/`
+  - `largest_common_subsequence.py` - Longest common subsequence implementation.
+  - `lcs_with_memo.py` - Longest common subsequence using memoization.
 
 ## Getting Started
 
@@ -121,6 +124,9 @@ DSA/
 │   └── notebook_decreasing.py
 ├── DynanicProgramming/
 │   └── lcs_dp.py
+├── Memoization/
+│   ├── largest_common_subsequence.py
+│   └── lcs_with_memo.py
 ├── LinearSearch/
 │   ├── linear_search.py
 │   └── linear_searchh.c
