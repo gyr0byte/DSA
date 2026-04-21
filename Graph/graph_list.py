@@ -5,11 +5,12 @@ class Graph:
         for n1, n2 in edges:
             self.data[n1].append(n2)
             self.data[n2].append(n1)
-    
+
     def __repr__(self):
         [enumerate(self.data)]
-            
+
 num_nodes = 5
-edges = [(0, 1), (0, 4), (1,2), (1, 3), (1, 4), (2,3), (3,4)]
+edges = [(0, 1), (0, 4), (1, 2), (1, 3), (1, 4), (2, 3), (3, 4)]
 graph = Graph(num_nodes, edges)
-print(graph.data)
+for x in enumerate(graph.data):
+    print(x)
