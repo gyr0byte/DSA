@@ -58,6 +58,12 @@ A collection of Data Structures and Algorithms (DSA) programs written in Python 
 - `KnapSackProblem/`
   - `knap_sack.py` - Basic knapsack problem implementation.
   - `knap_sack_dp.py` - Knapsack problem using dynamic programming.
+- `Graph/`
+  - `graph_list.py` - Graph implementation using adjacency list.
+  - `weighted_directed_graph.py` - Weighted directed graph implementation.
+- `PathFindingAlgorithms/`
+  - `breadth_first_search.py` - Breadth-first search implementation.
+  - `depth_first_search.py` - Depth-first search implementation.
 
 ## Getting Started
 
@@ -133,6 +139,12 @@ DSA/
 ├── KnapSackProblem/
 │   ├── knap_sack.py
 │   └── knap_sack_dp.py
+├── Graph/
+│   ├── graph_list.py
+│   └── weighted_directed_graph.py
+├── PathFindingAlgorithms/
+│   ├── breadth_first_search.py
+│   └── depth_first_search.py
 ├── LinearSearch/
 │   ├── linear_search.py
 │   └── linear_searchh.c
