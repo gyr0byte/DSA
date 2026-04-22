@@ -24,21 +24,21 @@ class Graph:
         result = ""
         if self.weighted:
             for i, (nodes, weights) in enumerate(zip(self.data, self.weight)):
-                result += f"{i}: {zip(nodes,weights)}\n"
+                result += f"{i}: {list(zip(nodes,weights))}\n"
         else:
             for i, nodes in enumerate(self.data):
                 result += f"{i}: {nodes}\n"
         return result
 
 
-num_node5 = 9
-edges5 = [(0, 1, 3), (0, 3, 2), (0, 8, 4), (1, 7, 4), (2, 7, 2), (2, 3, 6), (2, 5, 1), (3, 4, 1), (4, 8, 8), (5, 6, 8)]
+num_node1 = 9
+edges1 = [(0, 1, 3), (0, 3, 2), (0, 8, 4), (1, 7, 4), (2, 7, 2), (2, 3, 6), (2, 5, 1), (3, 4, 1), (4, 8, 8), (5, 6, 8)]
 
-num_node6 = 5
-edges6 = [(0,1), (1,2), (2,3), (2,4), (4,2), (3,0)]
+num_node2 = 5
+edges2 = [(0,1), (1,2), (2,3), (2,4), (4,2), (3,0)]
 
-graph_weighted = Graph(num_node5, edges5)
-graph_directed = Graph(num_node6, edges6)
+graph_weighted = Graph(num_node1, edges1, weighted=True)
+graph_directed = Graph(num_node2, edges2)
 
 print(graph_weighted)
 print(graph_directed)
