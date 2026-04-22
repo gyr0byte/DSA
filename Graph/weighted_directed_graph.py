@@ -9,7 +9,11 @@ class Graph:
             if self.weighted:
                 # include weights
                 node1, node2, weight = edge
-                
+                self.data[node1].append(node2)
+                self.weight[node1].append(weight)
+                if not directed:
+                    self.data[node2].append(node1)
+                    self.data[node2].append(weight)
             else:
                 # work without weights
 
