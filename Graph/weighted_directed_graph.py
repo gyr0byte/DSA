@@ -16,6 +16,11 @@ class Graph:
                     self.data[node2].append(weight)
             else:
                 # work without weights
+                node1, node2 = edge
+                self.data[node1].append(node2)
+                if not directed:
+                    self.data[node2].append(node1)
+                    
 
 num_node5 = 9
 edges5 = [(0, 1, 3), (0, 3, 2), (0, 8, 4), (1, 7, 4), (2, 7, 2), (2, 3, 6), (2, 5, 1), (3, 4, 1), (4, 8, 8), (5, 6, 8)]
