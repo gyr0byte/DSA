@@ -12,8 +12,21 @@ class Graph:
     def __str__(self):
         return self.__repr__()
         
-        
-        
+def dfs(graph, root):
+    stack = []
+    discovered = [False] * len(graph.data)
+    result = []
+    
+    stack.append(root)        
+
+    while len(stack) > 0:
+        current = stack.pop()
+        discovered[current] = True
+        result.append(current)
+        for node in graph.data[current]:
+            stack.append(node)
+            
+    
 num_nodes = 5
 edges = [(0, 1), (0, 4), (1, 2), (1, 3), (1, 4), (2, 3), (3, 4)]
 graph = Graph(num_nodes, edges)
