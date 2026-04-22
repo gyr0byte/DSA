@@ -3,8 +3,8 @@ class Graph:
         self.num_nodes = num_nodes
         self.directed = directed
         self.weighted = weighted
-        self.data = [[] for _ in range(num_edges)]
-        self.weight = [[] for _ in range(num_edges)]
+        self.data = [[] for _ in range(num_nodes)]
+        self.weight = [[] for _ in range(num_nodes)]
         for edge in edges:
             if self.weighted:
                 # include weights
@@ -22,8 +22,12 @@ class Graph:
                     self.data[node2].append(node1)
     def __repr__(self):
         result = ""
-        for i, (nodes, weights) in enumerate(zip(self.data, self.weight)):
-            result += f"{i}: {zip(nodes,weights)}\n"
+        if self.weighted:
+            for i, (nodes, weights) in enumerate(zip(self.data, self.weight)):
+                result += f"{i}: {zip(nodes,weights)}\n"
+        else:
+            for i, nodes in enumerate(self.data):
+                result += f"{i}: {nodes}\n"
         return result
 
 
@@ -32,3 +36,9 @@ edges5 = [(0, 1, 3), (0, 3, 2), (0, 8, 4), (1, 7, 4), (2, 7, 2), (2, 3, 6), (2, 
 
 num_node6 = 5
 edges6 = [(0,1), (1,2), (2,3), (2,4), (4,2), (3,0)]
+
+graph_weighted = Graph(num_node5, edges5)
+graph_directed = Graph(num_node6, edges6)
+
+print(graph_weighted)
+print(graph_directed)
