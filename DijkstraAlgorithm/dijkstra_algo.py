@@ -53,6 +53,7 @@ def shortest_path(graph, source, target):
         
         
 def update_distances(graph, current, distance, parent = None):
+    """ Update the distances of the current node's neighbors"""
     neighbors = graph.data[current]
     weights = graph.weight[current]
     for i, node in enumerate(neighbors):
