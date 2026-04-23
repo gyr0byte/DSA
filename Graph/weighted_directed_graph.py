@@ -38,7 +38,7 @@ num_node2 = 5
 edges2 = [(0,1), (1,2), (2,3), (2,4), (4,2), (3,0)]
 
 graph_weighted = Graph(num_node1, edges1, weighted=True)
-graph_directed = Graph(num_node2, edges2)
+graph_directed = Graph(num_node2, edges2, directed=True)
 
 print(graph_weighted)
 print(graph_directed)
