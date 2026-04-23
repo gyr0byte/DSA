@@ -35,6 +35,7 @@ def shortest_path(graph, source, target):
     visited = [False] * len(graph.data)
     distance = [float("inf")] * len(graph.data)
     queue = []
+    parent = [None] * len(graph.data)
 
     distance[source] = 0
     queue.append(source)
@@ -46,7 +47,7 @@ def shortest_path(graph, source, target):
         idx += 1
 
         #update the distance of all the neighbors
-        update_distances(graph, current, distance, )
+        update_distances(graph, current, distance, parent)
         
         # find the first unvisited node with the smallest distance
         next_node = pick_next_node(distance, visited)
@@ -54,7 +55,7 @@ def shortest_path(graph, source, target):
             queue.append(next_node)
         
     
-    return distance[target]
+    return distance[target], parent
         
 def update_distances(graph, current, distance, parent = None):
     """ Update the distances of the current node's neighbors"""
