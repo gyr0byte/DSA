@@ -53,7 +53,8 @@ def shortest_path(graph, source, target):
             queue.append(next_node)
         
         visited[current] = True
-        
+    
+    return distance[target]
         
 def update_distances(graph, current, distance, parent = None):
     """ Update the distances of the current node's neighbors"""
