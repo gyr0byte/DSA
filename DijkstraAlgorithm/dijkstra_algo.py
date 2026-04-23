@@ -48,7 +48,9 @@ def shortest_path(graph, source, target):
         update_distances(graph, current, distance, )
         
         # find the first unvisited node with the smallest distance
-        
+        next_node = pick_next_node(distance, visited)
+        if next_node:
+            queue.append(next_node)
         
         visited[current] = True
         
