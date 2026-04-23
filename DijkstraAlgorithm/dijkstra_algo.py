@@ -8,6 +8,13 @@ class Graph:
         for edge in edges:
             if self.weighted:
                 # include weight
+                node1, node2, weight = edge
+                self.data[node1].append(node2)
+                self.weight[node1].append(weight)
+                if not directed:
+                    self.data[node2].append(node1)
+                    self.weight[node2].append(weight)
+            else:
         
 
 def shortest_path(graph, source, target):
