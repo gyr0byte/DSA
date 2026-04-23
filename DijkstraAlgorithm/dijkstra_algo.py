@@ -24,7 +24,7 @@ class Graph:
         result = ""
         if self.weighted:
             for i, (nodes, weights) in enumerate(zip(self.data, self.weight)):
-                result += f"{i}: {list(zip(nodes, weights))}"
+                result += f"{i}: {list(zip(nodes, weights))}\n"
         else:
             for i, nodes in enumerate(self.data):
                 result += f"{i}: {nodes}\n"
@@ -83,3 +83,5 @@ edges = [(0, 1, 4), (0, 2, 2), (1, 2, 5), (1, 3, 10), (2, 4, 3), (4, 3, 4), (3, 
 
 graph = Graph(num_nodes, edges, weighted=True, directed=True)
 print(graph)
+
+print(shortest_path(graph, 0, 5))
