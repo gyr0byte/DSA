@@ -64,6 +64,8 @@ A collection of Data Structures and Algorithms (DSA) programs written in Python 
 - `PathFindingAlgorithms/`
   - `breadth_first_search.py` - Breadth-first search implementation.
   - `depth_first_search.py` - Depth-first search implementation.
+- `DijkstraAlgorithm/`
+  - `dijkstra_algo.py` - Dijkstra shortest path algorithm implementation.
 
 ## Getting Started
 
@@ -145,6 +147,8 @@ DSA/
 ├── PathFindingAlgorithms/
 │   ├── breadth_first_search.py
 │   └── depth_first_search.py
+├── DijkstraAlgorithm/
+│   └── dijkstra_algo.py
 ├── LinearSearch/
 │   ├── linear_search.py
 │   └── linear_searchh.c
