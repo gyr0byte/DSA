@@ -42,6 +42,7 @@ def shortest_path(graph, source, target):
     
     while idx < len(queue) and not visited[target]:
         current =  queue[idx]
+        visited[current] = True
         idx += 1
 
         #update the distance of all the neighbors
@@ -52,7 +53,6 @@ def shortest_path(graph, source, target):
         if next_node:
             queue.append(next_node)
         
-        visited[current] = True
     
     return distance[target]
         
@@ -77,3 +77,9 @@ def pick_next_node(distance, visited):
             min_distance = distance[node]
 
     return min_node
+
+num_nodes = 6
+edges = [(0, 1, 4), (0, 2, 2), (1, 2, 5), (1, 3, 10), (2, 4, 3), (4, 3, 4), (3, 5, 11)]
+
+graph = Graph(num_nodes, edges, weighted=True, directed=True)
+print(graph)
