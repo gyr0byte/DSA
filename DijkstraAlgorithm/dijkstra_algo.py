@@ -45,5 +45,19 @@ def shortest_path(graph, source, target):
         idx += 1
 
         #update the distance of all the neighbors
+        update_distances(graph, current, distance, )
+        
+        # find the first unvisited node with the smallest distance
+        
         visited[current] = True
         
+        
+def update_distances(graph, current, distance, parent = None):
+    neighbors = graph.data[current]
+    weights = graph.weight[current]
+    for i, node in enumerate(neighbors):
+        weight = weights[i]
+        if distance[current] + weight < distance[node]:
+            distance[node] = distance[current] + weight
+            if parent:
+                parent[node] = current
