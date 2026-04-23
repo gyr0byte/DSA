@@ -13,7 +13,7 @@ class Graph:
                 self.weight[node1].append(weight)
                 if not directed:
                     self.data[node2].append(node1)
-                    self.data[node2].append(weight)
+                    self.weight[node2].append(weight)
             else:
                 # work without weights
                 node1, node2 = edge
