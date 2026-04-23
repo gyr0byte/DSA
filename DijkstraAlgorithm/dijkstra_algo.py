@@ -49,6 +49,7 @@ def shortest_path(graph, source, target):
         
         # find the first unvisited node with the smallest distance
         
+        
         visited[current] = True
         
         
@@ -62,3 +63,14 @@ def update_distances(graph, current, distance, parent = None):
             distance[node] = distance[current] + weight
             if parent:
                 parent[node] = current
+
+def pick_next_node(distance, visited):
+    """Pick the next unvisited node at the smallest distance"""
+    min_distance = float('inf')
+    min_node = None
+    for node in range(len(distance)):
+        if not visited[node] and distance[node] < min_distance:
+            min_node = node
+            min_distance = distance[node]
+
+    return min_node
