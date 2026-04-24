@@ -10,7 +10,8 @@
 
 def subarray_sum(arr, target):
     i, j, s = 0, 0, 0
-    while i < len(arr) and j < len(arr) + 1:
+    n = len(arr)
+    while i < n and j < n + 1:
         if s == target:
             return i, j
         elif s < target:
@@ -20,7 +21,8 @@ def subarray_sum(arr, target):
         elif s > target:
             s -= arr[i]
             i += 1
-            
+    return None, None
+
 arr = [1, 7, 4, 2, 1, 3, 11, 5]
 target = 10
 print(subarray_sum(arr, target))
