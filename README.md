@@ -66,6 +66,9 @@ A collection of Data Structures and Algorithms (DSA) programs written in Python 
   - `depth_first_search.py` - Depth-first search implementation.
 - `DijkstraAlgorithm/`
   - `dijkstra_algo.py` - Dijkstra shortest path algorithm implementation.
+- `Questions/`
+  - `minimum_update_distance.py` - Minimum edit/update distance problem implementation.
+  - `subarray_sum.py` - Subarray sum problem implementation.
 
 ## Getting Started
 
@@ -149,6 +152,9 @@ DSA/
 │   └── depth_first_search.py
 ├── DijkstraAlgorithm/
 │   └── dijkstra_algo.py
+├── Questions/
+│   ├── minimum_update_distance.py
+│   └── subarray_sum.py
 ├── LinearSearch/
 │   ├── linear_search.py
 │   └── linear_searchh.c
