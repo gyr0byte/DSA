@@ -4,12 +4,17 @@ A collection of Data Structures and Algorithms (DSA) implementations written mai
 
 ## Table of Contents
 
+- [Overview](#overview)
 - [Contents](#contents)
 - [Getting Started](#getting-started)
 - [Folder Structure](#folder-structure)
 - [Learning Goals](#learning-goals)
 - [Contributing](#contributing)
 - [License](#license)
+
+## Overview
+
+This repository is a personal collection of DSA practice code. It includes beginner-friendly implementations across searching, sorting, graphs, dynamic programming, and related problem-solving patterns.
 
 ## Contents
 
