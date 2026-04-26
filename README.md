@@ -2,6 +2,15 @@
 
 A collection of Data Structures and Algorithms (DSA) implementations written mainly in Python, with a few C examples included.
 
+## Table of Contents
+
+- [Contents](#contents)
+- [Getting Started](#getting-started)
+- [Folder Structure](#folder-structure)
+- [Learning Goals](#learning-goals)
+- [Contributing](#contributing)
+- [License](#license)
+
 ## Contents
 
 - `LinearSearch/`
