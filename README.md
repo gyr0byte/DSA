@@ -1,8 +1,8 @@
 # DSA in Python
 
-A collection of Data Structures and Algorithms (DSA) programs written in Python and i don't know i might write sometimes in C cuz i love it.
+A collection of Data Structures and Algorithms (DSA) implementations written mainly in Python, with a few C examples included.
 
-## Current Contents
+## Contents
 
 - `LinearSearch/`
   - `linear_search.py` - Linear Search implementation in Python.
@@ -77,7 +77,7 @@ A collection of Data Structures and Algorithms (DSA) programs written in Python 
 - Python 3.x installed
 - GCC compiler installed (for running the C file)
 
-### Run the Program
+### Run an Example
 
 Run one Python file from the project root:
 
@@ -85,7 +85,7 @@ Run one Python file from the project root:
 python LinearSearch/linear_search.py
 ```
 
-### Compile and Run C File
+### Compile and Run a C File
 
 Compile and run one C file from the project root:
 
